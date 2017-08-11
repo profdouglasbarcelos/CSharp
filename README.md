@@ -9,4 +9,4 @@ Exemplos criados durante as aulas de CSharp.
 * Instalar a [extensão C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) no marketplace do Visual Studio Code.
 
 * Criar uma conta no site [GitHub](https://github.com/)
-** Caso precise de ajuda com o Git, verificar neste [link](https://github.com/profdouglasbarcelos/Git).
+* Caso precise de ajuda com o Git, verificar neste [link](https://github.com/profdouglasbarcelos/Git).
