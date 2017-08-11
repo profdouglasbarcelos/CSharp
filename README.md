@@ -10,3 +10,13 @@ Exemplos criados durante as aulas de CSharp.
 
 * Criar uma conta no site [GitHub](https://github.com/)
 * Caso precise de ajuda com o Git, verificar neste [link](https://github.com/profdouglasbarcelos/Git).
+
+## Branches (separados por turma)
+* [Master](https://github.com/profdouglasbarcelos/CSharp_Aulas), contém somente este Readme.md
+* Os demais seguem a seguinte nomenclatura EeA_UT, onde:
+    * E (de 1 a 4) = etapa.
+    * A = ano.
+    * U = Unidade.
+    * T = Turno (M - manhã, T - tarde, N - noite).
+    
+
