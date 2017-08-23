@@ -1,0 +1,11 @@
+﻿<Window x:Class="ViewsWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Height="23" Margin="167,10,0,0" TextWrapping="Wrap" Text="Cpf" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAdicionarAluno" Content="Adicionar Aluno" HorizontalAlignment="Left" Margin="315,13,0,0" VerticalAlignment="Top" Width="122" Click="btnAdicionarAluno_Click"/>
+
+    </Grid>
+</Window>
