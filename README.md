@@ -1,7 +1,9 @@
-# Aulas de CSharp
+# Aulas de CSharp na turma 1a Etapa 2018 CIC Noite
 
 Exemplos criados durante as aulas de CSharp.
 
+
+TODO: Corrigir pre requisitos.
 ## Pré Requisitos
 
 * Instalar o [Visual Studio Code](https://code.visualstudio.com/).
