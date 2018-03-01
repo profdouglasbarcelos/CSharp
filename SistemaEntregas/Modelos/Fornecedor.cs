@@ -1,6 +1,6 @@
 ﻿namespace Modelos
 {
-    class Fornecedor : Pessoa
+    public class Fornecedor : Pessoa
     {
     }
 }
