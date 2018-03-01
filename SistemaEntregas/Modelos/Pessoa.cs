@@ -1,6 +1,6 @@
 ﻿namespace Modelos
 {
-    public class Pessoa
+    public abstract class Pessoa
     {
         public int PessoaID { get; set; }
 
