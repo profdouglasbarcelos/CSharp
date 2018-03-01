@@ -6,12 +6,12 @@ namespace Aula1_2802
     {
         static void Main(string[] args)
         {
-            string nome = string.Empty;
+            Pessoa p = new Pessoa();
 
             Console.WriteLine("Digite seu nome");
-            nome = Console.ReadLine();
+            p.Nome = Console.ReadLine();
 
-            Console.WriteLine("Olá " + nome);
+            Console.WriteLine("Olá " + p.Nome);
 
             Console.ReadKey();
         }
