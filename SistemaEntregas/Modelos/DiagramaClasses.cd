@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Modelos.Endereco">
-    <Position X="6.5" Y="2" Width="1.5" />
+    <Position X="4.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAABAQI=</HashCode>
       <FileName>Endereco.cs</FileName>
