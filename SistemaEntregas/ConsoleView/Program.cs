@@ -16,10 +16,6 @@ namespace ConsoleView
             Sair
         }
 
-
-
-
-
         private static OpcoesMenuPrincipal Menu()
         {
             Console.WriteLine("Escolha sua opcao");
@@ -50,7 +46,8 @@ namespace ConsoleView
                 switch (opcaoDigitada)
                 {
                     case OpcoesMenuPrincipal.CadastrarCliente:
-                        CadastrarCliente();
+                        Cliente c = CadastrarCliente();
+                        ExibirDadosCliente(c);
                         break;
                     case OpcoesMenuPrincipal.PesquisarCliente:
                         PesquisarCliente();
@@ -125,6 +122,7 @@ namespace ConsoleView
             Console.WriteLine("Compl.: " + cliente._Endereco.Complemento);
             Console.WriteLine("-------------- ");
             Console.WriteLine();
+
         }
     }
 }
