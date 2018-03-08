@@ -5,15 +5,7 @@ namespace Controllers
 {
     public class ClienteController
     {
-        public List<Cliente> MeusClientes { get; set; }
-
-        public ClienteController()
-        {
-            MeusClientes = new List<Cliente>();
-        }
-
-
-
+        static List<Cliente> MeusClientes = new List<Cliente>();
 
         public void SalvarCliente(Cliente cliente)
         {
