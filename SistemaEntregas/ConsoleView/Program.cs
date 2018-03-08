@@ -26,10 +26,11 @@ namespace ConsoleView
             Console.WriteLine("1 - Cadastrar Novo");
             Console.WriteLine("2 - Pesquisar Cliente");
             Console.WriteLine("3 - Editar Cliente");
+            Console.WriteLine("4 - Excluir Cliente");
 
             Console.WriteLine(" - Geral -");
-            Console.WriteLine("4 - Limpar Tela");
-            Console.WriteLine("5 - Sair");
+            Console.WriteLine("5 - Limpar Tela");
+            Console.WriteLine("6 - Sair");
 
             //return Convert.ToInt32(Console.ReadLine());
             string opcao = Console.ReadLine();
