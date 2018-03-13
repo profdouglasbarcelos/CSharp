@@ -17,7 +17,7 @@ namespace Controllers
         public Cliente PesquisarPorNome(string nome)
         {
             var c = from x in MeusClientes
-                    where x.Nome.ToLower().Equals(nome.Trim().ToLower())
+                    where x.Nome.ToLower().Contains(nome.Trim().ToLower())
                     select x;
 
             if (c != null)
