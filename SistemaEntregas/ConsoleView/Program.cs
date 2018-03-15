@@ -164,9 +164,16 @@ namespace ConsoleView
             ClienteController cc = new ClienteController();
             List<Cliente> lista = cc.ListarClientes();
 
-            foreach (Cliente cli in lista)
+            if (lista.Count == 0)
             {
-                ExibirDadosCliente(cli);
+                Console.WriteLine(" * Ainda nao existem clientes cadastrados");
+            }
+            else
+            {
+                foreach (Cliente cli in lista)
+                {
+                    ExibirDadosCliente(cli);
+                }
             }
             Console.WriteLine();
         }
