@@ -12,10 +12,11 @@ namespace ConsoleView
         {
             CadastrarCliente = 1,
             PesquisarCliente = 2,
-            EditarCliente = 3,
-            ExcluirCliente = 4,
-            LimparTela = 5,
-            Sair = 6
+            ListarClientesCadastrados = 3,
+            EditarCliente = 4,
+            ExcluirCliente = 5,
+            LimparTela = 6,
+            Sair = 7
         }
 
         private static OpcoesMenuPrincipal Menu()
@@ -26,12 +27,13 @@ namespace ConsoleView
             Console.WriteLine(" - Clientes - ");
             Console.WriteLine("1 - Cadastrar Novo");
             Console.WriteLine("2 - Pesquisar Cliente");
-            Console.WriteLine("3 - Editar Cliente");
-            Console.WriteLine("4 - Excluir Cliente");
+            Console.WriteLine("3 - Listar Clientes Cadastrados");
+            Console.WriteLine("4 - Editar Cliente");
+            Console.WriteLine("5 - Excluir Cliente");
 
             Console.WriteLine(" - Geral -");
-            Console.WriteLine("5 - Limpar Tela");
-            Console.WriteLine("6 - Sair");
+            Console.WriteLine("6 - Limpar Tela");
+            Console.WriteLine("7 - Sair");
 
             //return Convert.ToInt32(Console.ReadLine());
             string opcao = Console.ReadLine();
@@ -58,6 +60,10 @@ namespace ConsoleView
                         break;
                     case OpcoesMenuPrincipal.PesquisarCliente:
                         PesquisarCliente();
+                        break;
+
+                    case OpcoesMenuPrincipal.ListarClientesCadastrados:
+                        ListarTodosClientes();
                         break;
                     case OpcoesMenuPrincipal.EditarCliente:
                         break;
