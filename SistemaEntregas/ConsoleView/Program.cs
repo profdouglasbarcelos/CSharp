@@ -37,11 +37,11 @@ namespace ConsoleView
 
             //return Convert.ToInt32(Console.ReadLine());
             string opcao = Console.ReadLine();
-            return (OpcoesMenuPrincipal) int.Parse(opcao);
+            return (OpcoesMenuPrincipal)int.Parse(opcao);
         }
         static void Main(string[] args)
         {
-            OpcoesMenuPrincipal opcaoDigitada = 
+            OpcoesMenuPrincipal opcaoDigitada =
                 OpcoesMenuPrincipal.Sair;
 
             do
@@ -55,7 +55,7 @@ namespace ConsoleView
 
                         ClienteController cc = new ClienteController();
                         cc.SalvarCliente(c);
-                        
+
                         ExibirDadosCliente(c);
                         break;
                     case OpcoesMenuPrincipal.PesquisarCliente:
@@ -77,9 +77,9 @@ namespace ConsoleView
                     default:
                         break;
                 }
-               
+
             } while (opcaoDigitada != OpcoesMenuPrincipal.Sair);
-            
+
         }
 
         private static void ExcluirCliente()
@@ -104,6 +104,14 @@ namespace ConsoleView
             Console.Write("Digite o cpf: ");
             cli.Cpf = Console.ReadLine();
 
+            Endereco end = CadastrarEndereco();
+
+            cli.EnderecoID = end.EnderecoID;
+            return cli;
+        }
+
+        private static Endereco CadastrarEndereco()
+        {
             // ... Endereco
             Endereco end = new Endereco();
 
@@ -120,9 +128,10 @@ namespace ConsoleView
             Console.Write("Digite o complemento: ");
             end.Complemento = Console.ReadLine();
 
-            cli._Endereco = end;
+            EnderecoController ec = new EnderecoController();
+            ec.SalvarEndereco(end);
+            return end;
 
-            return cli;
         }
 
         private static void PesquisarCliente()
@@ -146,11 +155,22 @@ namespace ConsoleView
             Console.WriteLine("ID:" + cliente.PessoaID);
             Console.WriteLine("Nome: " + cliente.Nome);
             Console.WriteLine("Cpf: " + cliente.Cpf);
+            Console.WriteLine("ID endereço: " + cliente.EnderecoID);
+
+            ExibirDadosDeEndereco(cliente.EnderecoID);
+
+
+        }
+
+        private static void ExibirDadosDeEndereco(int ID)
+        {
+            EnderecoController ec = new EnderecoController();
+            Endereco e = ec.PesquisarPorId(ID);
 
             Console.WriteLine("- Endereco -");
-            Console.WriteLine("Rua: " + cliente._Endereco.Rua);
-            Console.WriteLine("Num: " + cliente._Endereco.Numero);
-            Console.WriteLine("Compl.: " + cliente._Endereco.Complemento);
+            Console.WriteLine("Rua: " + e.Rua);
+            Console.WriteLine("Num: " + e.Numero);
+            Console.WriteLine("Compl.: " + e.Complemento);
             Console.WriteLine("-------------- ");
             Console.WriteLine();
 
