@@ -128,7 +128,7 @@ namespace ConsoleView
             Console.Write("Digite o complemento: ");
             end.Complemento = Console.ReadLine();
 
-            EnderecoController ec = new EnderecoController();
+            EnderecosController ec = new EnderecosController();
             ec.SalvarEndereco(end);
             return end;
 
@@ -164,7 +164,7 @@ namespace ConsoleView
 
         private static void ExibirDadosDeEndereco(int ID)
         {
-            EnderecoController ec = new EnderecoController();
+            EnderecosController ec = new EnderecosController();
             Endereco e = ec.PesquisarPorId(ID);
 
             Console.WriteLine("- Endereco -");
