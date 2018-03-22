@@ -66,6 +66,7 @@ namespace ConsoleView
                         ListarTodosClientes();
                         break;
                     case OpcoesMenuPrincipal.EditarCliente:
+                        EditarCliente();
                         break;
                     case OpcoesMenuPrincipal.ExcluirCliente:
                         ExcluirCliente();
@@ -196,6 +197,65 @@ namespace ConsoleView
                 }
             }
             Console.WriteLine();
+        }
+
+        private static void EditarCliente()
+        {
+            Console.WriteLine(" -- Editar Cliente -- ");
+            ListarTodosClientes();
+
+            Console.WriteLine("Digite o ID do cliente para ser editado");
+
+            int idCliente = int.Parse(Console.ReadLine());
+            ClienteController cc = new ClienteController();
+
+            Cliente cli = new Cliente();
+
+            Console.WriteLine("Digite o nome desejado");
+            cli.Nome = Console.ReadLine();
+
+            Console.WriteLine("Digite o cpf desejado");
+            cli.Cpf = Console.ReadLine();
+
+            Endereco e = AlterarEndereco(cli.EnderecoID);
+
+            // ----
+
+            cc.EditarCliente(idCliente, cli);
+            
+            //Cliente cli = cc.PesquisarPorID(idCliente);
+
+            if (cli != null)
+            {
+                Console.WriteLine("Digite o nome desejado");
+                cli.Nome = Console.ReadLine();
+
+                Console.WriteLine("Digite o cpf desejado");
+                cli.Cpf = Console.ReadLine();
+
+                Endereco e = AlterarEndereco(cli.EnderecoID);
+            }
+            else
+            {
+                Console.WriteLine("Cliente não encontrado");
+            }
+        }
+
+        private static Endereco AlterarEndereco(int id)
+        {
+            EnderecosController ec = new EnderecosController();
+            Endereco e = ec.PesquisarPorId(id);
+
+            Console.WriteLine("Informe o nome da rua: ");
+            e.Rua = Console.ReadLine();
+
+            Console.WriteLine("Informe o número: ");
+            e.Numero = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o complemento: ");
+            e.Complemento = Console.ReadLine();
+
+            return e;
         }
     }
 }
