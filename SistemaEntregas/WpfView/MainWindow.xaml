@@ -13,6 +13,9 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Button Name="btnCadastrarCliente" Content="Cadastrar Cliente" Grid.Row="2" Grid.Column="1" Click="btnCadastrarCliente_Click" />
+        <Button Name="btnCadastrarCliente" 
+                Content="Cadastrar Cliente" 
+                Grid.Row="2" Grid.Column="1" 
+                Click="btnCadastrarCliente_Click" />
     </Grid>
 </Window>
