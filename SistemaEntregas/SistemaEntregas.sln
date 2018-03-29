@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{37AA6D61-6025-485C-B264-E336C700662D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleView", "ConsoleView\ConsoleView.csproj", "{0DEEB723-9F84-4049-88A2-BD8CC5D1C549}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controllers", "Controllers\Controllers.csproj", "{9D9AEB04-A80C-4123-AFB6-F19F32A14EC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfView", "WpfView\WpfView.csproj", "{B773514C-ACC4-4E26-AA67-EBCC15D62BD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{9D9AEB04-A80C-4123-AFB6-F19F32A14EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D9AEB04-A80C-4123-AFB6-F19F32A14EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D9AEB04-A80C-4123-AFB6-F19F32A14EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B773514C-ACC4-4E26-AA67-EBCC15D62BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B773514C-ACC4-4E26-AA67-EBCC15D62BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B773514C-ACC4-4E26-AA67-EBCC15D62BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B773514C-ACC4-4E26-AA67-EBCC15D62BD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
