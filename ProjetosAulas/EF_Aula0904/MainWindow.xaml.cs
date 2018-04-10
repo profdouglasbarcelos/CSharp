@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EF_Aula0904.Controllers;
+using EF_Aula0904.Models;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace EF_Aula0904
 {
@@ -23,6 +12,21 @@ namespace EF_Aula0904
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnSalvarCliente_Click(object sender, RoutedEventArgs e)
+        {
+            SalvarCliente();
+        }
+
+        private void SalvarCliente()
+        {
+            // Validar os campos
+            Cliente cli = new Cliente();
+            cli.Nome = "Godofredo"; // txtNome.Text;
+            cli.CPF = "12345678909";
+
+            ClientesController.SalvarCliente(cli);
         }
     }
 }
