@@ -9,6 +9,6 @@ namespace EF_Aula0904.Models.DAL
 
         }
 
-        public DbSet<Cliente> tblClientes { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
     }
 }
