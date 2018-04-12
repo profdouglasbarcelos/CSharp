@@ -12,16 +12,14 @@ namespace Controllers
 
         public void SalvarCliente(Cliente cliente)
         {
-            Contexto ctx = new Contexto();
-            ctx.Clientes.Add(cliente);
-            ctx.SaveChanges();
+            
+            ContextoSingleton.Instancia.Clientes.Add(cliente);
+            ContextoSingleton.Instancia.SaveChanges();
         }
 
         public Cliente PesquisarPorNome(string nome)
         {
-            Contexto ctx = new Contexto();
-
-            var c = from x in ctx.Clientes
+            var c = from x in ContextoSingleton.Instancia.Clientes
                     where x.Nome.ToLower().Contains(nome.Trim().ToLower())
                     select x;
 
@@ -33,25 +31,23 @@ namespace Controllers
 
         public Cliente PesquisarPorID(int idCliente)
         {
-            Contexto ctx = new Contexto();
-            return ctx.Clientes.Find(idCliente);
+            return ContextoSingleton.Instancia.Clientes.Find(idCliente);
         }
 
         public void ExcluirCliente(int idCliente)
         {
-            Contexto ctx = new Contexto();
-            Cliente c = ctx.Clientes.Find(idCliente);
 
-            ctx.Entry(c).State = 
+            Cliente c = ContextoSingleton.Instancia.Clientes.Find(idCliente);
+
+            ContextoSingleton.Instancia.Entry(c).State = 
                 System.Data.Entity.EntityState.Deleted;
 
-            ctx.SaveChanges();
+            ContextoSingleton.Instancia.SaveChanges();
         }
 
         public List<Cliente> ListarClientes()
         {
-            Contexto ctx = new Contexto();
-            return ctx.Clientes.ToList();
+            return ContextoSingleton.Instancia.Clientes.ToList();
         }
 
         public void EditarCliente(int idClienteEditar, Cliente clienteEditado)
@@ -63,7 +59,12 @@ namespace Controllers
                 clienteEditar.Nome = clienteEditado.Nome;
                 clienteEditar.Cpf = clienteEditado.Cpf;
 
+                ContextoSingleton
+                    .Instancia
+                    .Entry(clienteEditar).State =
+                    System.Data.Entity.EntityState.Modified;
 
+                ContextoSingleton.Instancia.SaveChanges();
             }
         }
     }
