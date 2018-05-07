@@ -1,4 +1,4 @@
-# Aulas de CSharp na turma 1a Etapa 2018 CIC Noite
+# Aulas de CSharp
 
 Exemplos criados durante as aulas de CSharp.
 
