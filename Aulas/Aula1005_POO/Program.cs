@@ -16,6 +16,11 @@ namespace Aula1005_POO
 
             cli.Cpf = "12345678909"; // set
             string cpfCliente = cli.Cpf; // get
+
+            Console.WriteLine(cli.Nome);
+            Console.WriteLine(cli.Cpf);
+
+            Console.ReadKey();
         }
     }
 }

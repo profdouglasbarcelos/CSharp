@@ -5,7 +5,7 @@
         // Atributo
         private string nome;
 
-        // Propriedade
+        // Propriedades
         public string Nome
         {
             get
@@ -18,9 +18,25 @@
                 nome = value;
             }
         }
-
-
+        
         public string Cpf { get; set; }
 
+
+        // Construtores
+        public Cliente() // Construtor vazio
+        {
+
+        }
+
+        public Cliente(string nome)
+        {
+            Nome = nome;
+        }
+
+        public Cliente(string nome, string cpf)
+        {
+            Nome = nome;
+            Cpf = cpf;
+        }
     }
 }
