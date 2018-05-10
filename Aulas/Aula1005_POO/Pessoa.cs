@@ -1,6 +1,6 @@
 ﻿namespace Aula1005_POO
 {
-    class Pessoa
+    public abstract class Pessoa
     {
         // Atributo
         private string nome;
