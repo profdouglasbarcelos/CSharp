@@ -22,7 +22,9 @@ namespace Aula1005_POO
 
             // Utilizando os construtores parametrizados
             Cliente cli2 = new Cliente("Jucicreia"); // nome
-            Cliente cli3 = new Cliente("Juciliuda", "123"); // nome, cpf
+            Console.WriteLine("cli2.Nome: " + cli2.Nome);
+
+            //Cliente cli3 = new Cliente("Juciliuda", "123"); // nome, cpf
 
 
 

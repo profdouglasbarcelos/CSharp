@@ -1,9 +1,16 @@
 ﻿namespace Aula1005_POO
 {
-    class Cliente
+    class Cliente : Pessoa
     {
-        
+        public Cliente()
+        {
+            
+        }
 
+        public Cliente(string nome) : base(nome)
+        {
+
+        }
 
         
     }
