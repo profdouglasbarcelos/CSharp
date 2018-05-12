@@ -10,6 +10,15 @@ namespace Aula1105_Console
     {
         static void Main(string[] args)
         {
+            int valor1;
+            valor1 = 10;
+
+            Console.WriteLine("Valor: " + valor1);
+            string informacaoUsuario = Console.ReadLine();
+
+            Console.WriteLine("Voce digitou: " + informacaoUsuario);
+
+            Console.ReadKey();
         }
     }
 }
