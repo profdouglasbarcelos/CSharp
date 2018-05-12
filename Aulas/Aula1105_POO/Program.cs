@@ -9,12 +9,18 @@ namespace Aula1105_POO
             Aluno a = new Aluno();
 
             a.Nome = "Godofredo"; // set
-            a.Cpf = "12345678909";
+            //a.Cpf = "12345678909";
             Console.WriteLine("Aluno:" + a.Nome); // get
 
             Aluno b = new Aluno("Julinda", "123");
+
+            Console.WriteLine("Aluno " + b.Nome + ", Cpf" + b.Cpf);
+
             Aluno c = new Aluno("Janacreia");
 
+            //Pessoa p = new Pessoa();
+
+            Console.ReadKey();
             
         }
     }

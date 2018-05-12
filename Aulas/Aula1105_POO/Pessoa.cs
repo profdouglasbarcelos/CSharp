@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aula1105_POO
 {
-    class Pessoa
+    abstract class Pessoa
     {
         // Atributos
         private string nome;
@@ -18,7 +18,7 @@ namespace Aula1105_POO
             set => nome = value; // set { nome = value; }
         }
 
-        public string Cpf { get; set; }
+        public string Cpf { get; private set; }
 
 
         // Construtor
