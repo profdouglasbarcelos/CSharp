@@ -15,6 +15,7 @@ namespace Aula1405_Interfaces
             Console.WriteLine("Velocidade inicial: " + car.Velocidade);
             car.Acelerar();
             car.Acelerar();
+            car.Desacelerar();
             Console.WriteLine("Velocidade Atual: " + car.Velocidade);
 
             Console.ReadKey();
