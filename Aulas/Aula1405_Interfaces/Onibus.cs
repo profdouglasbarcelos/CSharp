@@ -2,28 +2,23 @@
 
 namespace Aula1405_Interfaces
 {
-    class Carro : IMeioTransporte
+    class Onibus : IMeioTransporte
     {
         public int Velocidade { get; set; }
 
-        public Carro()
-        {
-            Velocidade = 0;
-        }
-
         public void Acelerar()
         {
-            Velocidade += 10;
+            Velocidade += 6;
         }
 
         public void Desacelerar()
         {
-            Velocidade -= 5;
+            Velocidade -= 3;
         }
 
         public string ImprimirInfo()
         {
-            return "Carro, velocidade atual: " + Velocidade;
+            return "Ônibus, velocidade atual: " + Velocidade;
         }
     }
 }
