@@ -37,5 +37,7 @@
             Nome = nome;
             Cpf = cpf;
         }
+
+        public abstract string ImprimirInfo();
     }
 }

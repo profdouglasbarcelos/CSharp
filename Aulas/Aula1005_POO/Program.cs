@@ -41,6 +41,8 @@ namespace Aula1005_POO
 
             //Pessoa p = new Pessoa(); // ERRO: classes abstratas nao podem ser instanciadas
 
+            Console.WriteLine("Dados cli3: " + cli3.ImprimirInfo());
+
 
             Console.ReadKey();
         }

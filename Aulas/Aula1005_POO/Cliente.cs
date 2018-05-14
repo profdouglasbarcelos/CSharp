@@ -39,6 +39,17 @@ namespace Aula1005_POO
 
         }
 
-
+        override
+            public string ImprimirInfo()
+        {
+            return Nome + 
+                ", " + 
+                Cpf + 
+                ", " + 
+                DataNasc.ToShortDateString() +
+                ", " +
+                Idade
+                ;
+        }
     }
 }
