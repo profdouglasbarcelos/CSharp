@@ -12,9 +12,12 @@ namespace Aula1105_POO
             //a.Cpf = "12345678909";
             Console.WriteLine("Aluno:" + a.Nome); // get
 
-            Aluno b = new Aluno("Julinda", "123");
+            Aluno b = new Aluno("Juciliuda", "123");
+            b.Matricula = "54321";
 
-            Console.WriteLine("Aluno " + b.Nome + ", Cpf" + b.Cpf);
+            Console.WriteLine(b.ShowInfoPessoa());
+
+            //Console.WriteLine("Aluno " + b.Nome + ", Cpf" + b.Cpf);
 
             Aluno c = new Aluno("Janacreia");
 
