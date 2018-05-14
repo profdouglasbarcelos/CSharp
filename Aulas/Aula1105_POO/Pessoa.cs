@@ -36,5 +36,7 @@ namespace Aula1105_POO
             Nome = nome;
             Cpf = cpf;
         }
+
+        public abstract string ShowInfoPessoa();
     }
 }
