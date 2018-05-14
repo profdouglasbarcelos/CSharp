@@ -6,6 +6,14 @@ namespace Aula1405_Interfaces
     {
         public int Velocidade { get; set; }
 
+
+        // chave para objeto Marca
+        public int MarcaID { get; set; }
+
+        // Propriedade de navegacao
+        public virtual Marca _Marca { get; set; }
+
+
         public void Acelerar()
         {
             Velocidade += 6;
