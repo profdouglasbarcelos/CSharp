@@ -12,6 +12,8 @@ namespace Aula1405_Interfaces
             c.Acelerar();
             c.Acelerar();
 
+            
+
             AcelerarBastante(c);
             Console.WriteLine("Carro, velocidade atual: " + c.Velocidade);
 
