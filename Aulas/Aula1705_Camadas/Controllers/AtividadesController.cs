@@ -10,6 +10,11 @@ namespace Aula1705_Camadas.Controllers
         
         
         //Salvar
+        public void Salvar(Atividade atividade)
+        {
+            ListaAtividades.Add(atividade);
+        }
+
         //Listar
         //Ler
         //Editar
