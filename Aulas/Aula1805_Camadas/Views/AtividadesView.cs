@@ -39,6 +39,12 @@ namespace Aula1805_Camadas.Views
 
                     case 3:
                         EditarAtividadeCadastrada();
+                        break;
+
+                    case 4:
+                        ExcluirAtividadeCadastrada();
+                        break;
+
                     default:
                         break;
                 }
@@ -47,14 +53,50 @@ namespace Aula1805_Camadas.Views
             } while (opcao != 6);
         }
 
+        private void ExcluirAtividadeCadastrada()
+        {
+            Console.Clear();
+
+            ExibirAtividadesCadastradas();
+
+            Console.WriteLine("-- Excluir atividade cadastrada -- ");
+
+            Console.Write("Digite o id da atividade a ser excluida: ");
+            int id = int.Parse(Console.ReadLine());
+
+            Atividade atividade = ac.BuscarPorId(id);
+
+            if (atividade != null)
+                ac.Excluir(atividade);
+            else
+                Console.WriteLine("Atividade não encontrada");
+        }
+
         private void EditarAtividadeCadastrada()
         {
-            
+            Console.Clear();
+            ExibirAtividadesCadastradas();
+
+            Console.WriteLine("-- Editar atividade cadastrada -- ");
+
+            Atividade atividade = new Atividade();
+            Console.Write("Digite o id da atividade a ser alterada: ");
+            atividade.AtividadeID = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o novo nome: ");
+            atividade.Nome = Console.ReadLine();
+
+            Console.Write("Ativo? (s/n)");
+            atividade.Ativo = Console.ReadLine() == "s" ? true : false;
+
+            ac.Editar(atividade);
         }
 
         private void ExibirAtividadesCadastradas()
         {
+            Console.Clear();
             Console.WriteLine("-- Exibindo atividades cadastradas -- ");
+
             foreach (Atividade a in ac.Listar())
             {
                 Console.WriteLine("- Dados Atividade - ");
@@ -68,6 +110,8 @@ namespace Aula1805_Camadas.Views
 
         private void CadastrarAtiviade()
         {
+            Console.Clear();
+            Console.WriteLine("-- Cadastrando nova atividade -- ");
             Atividade atividade = new Atividade();
             Console.Write("Digite o nome da atividade: ");
             atividade.Nome = Console.ReadLine();

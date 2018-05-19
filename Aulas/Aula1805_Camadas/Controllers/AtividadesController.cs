@@ -7,9 +7,18 @@ namespace Aula1805_Camadas.Controllers
     {
         List<Atividade> minhasAtividades = new List<Atividade>();
 
+        public int UltimoIdUtilizado { get; private set; }
+
+        public AtividadesController()
+        {
+            UltimoIdUtilizado = 0;
+        }
+
         // Salvar
         public void Salvar(Atividade atividade)
         {
+            UltimoIdUtilizado++;
+            atividade.AtividadeID = UltimoIdUtilizado;
             minhasAtividades.Add(atividade);
         }
 
@@ -17,6 +26,19 @@ namespace Aula1805_Camadas.Controllers
         public List<Atividade> Listar()
         {
             return minhasAtividades;
+        }
+
+        // BuscarPorID
+        public Atividade BuscarPorId(int id)
+        {
+            foreach (Atividade a in minhasAtividades)
+            {
+                if(a.AtividadeID == id)
+                {
+                    return a;
+                }
+            }
+            return null;
         }
 
         // Editar
