@@ -46,7 +46,7 @@ namespace Aula1705_Camadas.Controllers
 
             foreach (Atividade a in ListaAtividades)
             {
-                if (a.Nome.Contains(nome))
+                if (a.Nome.ToLower().Contains(nome.ToLower()))
                     atividadesSelecionadas.Add(a);
             }
 
