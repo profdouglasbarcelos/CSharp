@@ -39,6 +39,9 @@ namespace Aula1705_Camadas.Views
                 Console.WriteLine("= 3) Buscar Atividade =");
                 Console.WriteLine("= 4) Editar Atividade =");
                 Console.WriteLine("= 5) Excluir Atividade =");
+                Console.WriteLine("= 6) Buscar atividade por Nome =");
+                Console.WriteLine("= 7) Listar Atividades (Ativos/Inativos) =");
+
                 Console.WriteLine("= 9) Sair ");
                 Console.WriteLine("======================");
 
@@ -111,7 +114,9 @@ namespace Aula1705_Camadas.Views
             Console.Write("Digite o nome da atividade: ");
             atividade.Nome = Console.ReadLine();
 
-            atividade.Ativo = true;
+            Console.Write("Ativo? (s/n): ");
+            atividade.Ativo = Console.ReadLine() == "s" ? true : false;
+
             return atividade;
         }
 
