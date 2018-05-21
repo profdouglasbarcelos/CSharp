@@ -15,6 +15,8 @@ namespace Aula1705_Camadas.Views
             BuscarAtividade = 3,
             EditarAtividade = 4,
             ExcluirAtividade = 5,
+            BuscarAtividadePorNome = 6,
+            ListarAtividadesAtivoInativo = 7,
             Sair = 9
         }
 
@@ -65,6 +67,14 @@ namespace Aula1705_Camadas.Views
                     case OpcoesMenu.ExcluirAtividade:
                         ExcluirAtividade();
                         break;
+
+                    case OpcoesMenu.BuscarAtividadePorNome:
+                        BuscarAtividadePorNome();
+                        break;
+
+                    case OpcoesMenu.ListarAtividadesAtivoInativo:
+                        break;
+
                     case OpcoesMenu.Sair:
                         break;
                     default:
@@ -76,6 +86,22 @@ namespace Aula1705_Camadas.Views
             } while (opcao != OpcoesMenu.Sair);
 
 
+        }
+
+        private void BuscarAtividadePorNome()
+        {
+            Console.Write("Digite o nome da atividade que deseja procurar: ");
+            string nomeAtividade = Console.ReadLine();
+
+            Console.WriteLine("-- Exibindo a lista de atividades por nome --");
+
+            foreach (Atividade a in atividadeController.BuscarPorNome(nomeAtividade))
+            {
+                ExibirDetalhesAtividade(a);
+            }
+
+            Console.WriteLine("-- Fim da lista de atividades por nome --");
+            Console.ReadKey();
         }
 
         private void ExcluirAtividade()
