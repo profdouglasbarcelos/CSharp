@@ -52,6 +52,18 @@ namespace Aula1705_Camadas.Controllers
             return atividadesSelecionadas.ToList();
         }
 
+        //BuscarAtivoInativo
+        public List<Atividade> BuscarAtivoInativo(bool ativo)
+        {
+            IEnumerable<Atividade> atividadesSelecionadas = new List<Atividade>();
+
+            atividadesSelecionadas = from x in ListaAtividades
+                                     where x.Ativo == ativo
+                                     select x;
+
+            return atividadesSelecionadas.ToList();
+        }
+
         //Editar
         public void Editar(int id, Atividade atividadeAtualizada)
         {

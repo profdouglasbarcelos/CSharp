@@ -74,6 +74,7 @@ namespace Aula1705_Camadas.Views
                         break;
 
                     case OpcoesMenu.ListarAtividadesAtivoInativo:
+                        BuscarAtividadesAtivoInativo();
                         break;
 
                     case OpcoesMenu.Sair:
@@ -87,6 +88,28 @@ namespace Aula1705_Camadas.Views
             } while (opcao != OpcoesMenu.Sair);
 
 
+        }
+
+        private void BuscarAtividadesAtivoInativo()
+        {
+            Console.WriteLine(" -- Pesquisando itens Ativos/Inativos --");
+            Console.Write("Voce deseja pesquisar os itens ativos (a) ou inativos (i)? (a/i): ");
+            bool resposta = Console.ReadLine() == "a" ? true : false;
+
+            List<Atividade> lista = atividadeController.BuscarAtivoInativo(resposta);
+
+            if (lista.Count > 0)
+            {
+                foreach (Atividade a in lista)
+                {
+                    ExibirDetalhesAtividade(a);
+                }
+            }
+            else
+                Console.WriteLine(" * Lista vazia");
+
+            Console.WriteLine("-- Fim da lista de atividades Ativo/Inativo --");
+            Console.ReadKey();
         }
 
         private void BuscarAtividadePorNome()
