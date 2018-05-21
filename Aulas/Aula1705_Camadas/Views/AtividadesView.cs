@@ -6,6 +6,15 @@ namespace Aula1705_Camadas.Views
 {
     class AtividadesView
     {
+        private AtividadesController atividadeController;
+
+        public AtividadesView()
+        {
+            atividadeController = new AtividadesController();
+        }
+
+
+
         public void ExibirMenu()
         {
             int opcao = 9;
@@ -54,7 +63,7 @@ namespace Aula1705_Camadas.Views
 
             } while (opcao != 9);
 
-            
+
         }
 
         private void ExcluirAtividade()
@@ -64,7 +73,6 @@ namespace Aula1705_Camadas.Views
             Console.Write("Digite o id da atividade que deseja excluir: ");
             int id = int.Parse(Console.ReadLine());
 
-            AtividadesController atividadeController = new AtividadesController();
             atividadeController.Excluir(id);
         }
 
@@ -77,7 +85,6 @@ namespace Aula1705_Camadas.Views
 
             Atividade atividadeAtualizada = ObterDadosAtividade();
 
-            AtividadesController atividadeController = new AtividadesController();
             atividadeController.Editar(id, atividadeAtualizada);
         }
 
@@ -85,7 +92,6 @@ namespace Aula1705_Camadas.Views
         {
             Atividade atividade = ObterDadosAtividade();
 
-            AtividadesController atividadeController = new AtividadesController();
             atividadeController.Salvar(atividade);
         }
 
@@ -102,8 +108,6 @@ namespace Aula1705_Camadas.Views
 
         private void ListarAtividades()
         {
-            AtividadesController atividadeController = new AtividadesController();
-
             Console.WriteLine("Listando atividades cadastradas");
             foreach (Atividade atividade in atividadeController.Listar())
             {
@@ -114,14 +118,12 @@ namespace Aula1705_Camadas.Views
         }
         private void BuscarAtividade()
         {
-            AtividadesController atividadeController = new AtividadesController();
-
             Console.Write("Digite o id da atividade: ");
             int id = int.Parse(Console.ReadLine());
 
             Atividade atividade = atividadeController.BuscarPorID(id);
 
-            if(atividade != null)
+            if (atividade != null)
             {
                 ExibirDetalhesAtividade(atividade);
             }
