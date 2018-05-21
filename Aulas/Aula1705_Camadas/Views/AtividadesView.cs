@@ -7,6 +7,15 @@ namespace Aula1705_Camadas.Views
     class AtividadesView
     {
         private AtividadesController atividadeController;
+        
+        enum MinhasOpcoes
+        {
+            CriarAtividade = 1,
+            ListarAtividades = 2,
+            BuscarAtividade = 3,
+            EditarAtividade = 4,
+            ExcluirAtividade = 5
+        }
 
         public AtividadesView()
         {
