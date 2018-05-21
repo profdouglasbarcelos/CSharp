@@ -8,13 +8,14 @@ namespace Aula1705_Camadas.Views
     {
         private AtividadesController atividadeController;
         
-        enum MinhasOpcoes
+        enum OpcoesMenu
         {
             CriarAtividade = 1,
             ListarAtividades = 2,
             BuscarAtividade = 3,
             EditarAtividade = 4,
-            ExcluirAtividade = 5
+            ExcluirAtividade = 5,
+            Sair = 9
         }
 
         public AtividadesView()
@@ -26,7 +27,7 @@ namespace Aula1705_Camadas.Views
 
         public void ExibirMenu()
         {
-            int opcao = 9;
+            OpcoesMenu opcao = OpcoesMenu.Sair;
 
             do
             {
@@ -41,36 +42,35 @@ namespace Aula1705_Camadas.Views
                 Console.WriteLine("= 9) Sair ");
                 Console.WriteLine("======================");
 
-                opcao = int.Parse(Console.ReadLine());
+                opcao = (OpcoesMenu) int.Parse(Console.ReadLine());
+
 
                 switch (opcao)
                 {
-                    case 1:
+                    case OpcoesMenu.CriarAtividade:
                         CriarAtividade();
                         break;
-
-                    case 2:
+                    case OpcoesMenu.ListarAtividades:
                         ListarAtividades();
                         break;
-
-                    case 3:
+                    case OpcoesMenu.BuscarAtividade:
                         BuscarAtividade();
                         break;
-
-                    case 4:
+                    case OpcoesMenu.EditarAtividade:
                         EditarAtividade();
                         break;
-
-                    case 5:
+                    case OpcoesMenu.ExcluirAtividade:
                         ExcluirAtividade();
                         break;
-
-
+                    case OpcoesMenu.Sair:
+                        break;
                     default:
+                        Console.WriteLine("Opcao invalida! Digite qualquer tecla para continuar");
+                        Console.ReadKey();
                         break;
                 }
 
-            } while (opcao != 9);
+            } while (opcao != OpcoesMenu.Sair);
 
 
         }
