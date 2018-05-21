@@ -1,6 +1,7 @@
 ﻿using Aula1705_Camadas.Controllers;
 using Aula1705_Camadas.Models;
 using System;
+using System.Collections.Generic;
 
 namespace Aula1705_Camadas.Views
 {
@@ -95,10 +96,17 @@ namespace Aula1705_Camadas.Views
 
             Console.WriteLine("-- Exibindo a lista de atividades por nome --");
 
-            foreach (Atividade a in atividadeController.BuscarPorNome(nomeAtividade))
+            List<Atividade> lista = atividadeController.BuscarPorNome(nomeAtividade);
+
+            if (lista.Count > 0)
             {
-                ExibirDetalhesAtividade(a);
+                foreach (Atividade a in lista)
+                {
+                    ExibirDetalhesAtividade(a);
+                }
             }
+            else
+                Console.WriteLine(" * Lista vazia");
 
             Console.WriteLine("-- Fim da lista de atividades por nome --");
             Console.ReadKey();
