@@ -6,6 +6,16 @@ namespace Aula1805_Camadas.Views
 {
     class AtividadesView
     {
+        enum OpcoesMenu
+        {
+            CadastrarAtividade,
+            ListarAtividades,
+            EditarAtividade,
+            ExcluirAtividade,
+            Sair
+        }
+
+
         AtividadesController ac = new AtividadesController();
 
 
