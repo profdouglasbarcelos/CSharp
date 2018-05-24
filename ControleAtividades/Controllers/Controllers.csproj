@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AtividadesController.cs" />
+    <Compile Include="Base\BaseController.cs" />
     <Compile Include="Base\IBaseController.cs" />
     <Compile Include="CategoriasController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
