@@ -1,6 +1,6 @@
 ﻿namespace Modelos
 {
-    class Usuario
+    public class Usuario
     {
         public int UsuarioID { get; set; }
 
