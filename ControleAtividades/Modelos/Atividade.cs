@@ -1,9 +1,13 @@
-﻿namespace Modelos
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Modelos
 {
     public class Atividade
     {
+        [Key]
         public int AtividadeID { get; set; }
 
+        [Required, StringLength(30)]
         public string Nome { get; set; }
 
         public string Descricao { get; set; }
