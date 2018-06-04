@@ -42,24 +42,22 @@ namespace Controllers
                 // forma 2
                 //contexto.Entry(a).State = System.Data.Entity.EntityState.Deleted;
 
-
                 contexto.SaveChanges();
             }
-
-
         }
 
         public IList<Atividade> ListarPorNome(string nome)
         {
             // LINQ
             //var atividadesComNome = from a in contexto.Atividades
-            //            where a.Nome == nome
+            //            where a.Nome.ToLower() == nome.ToLower()
             //            select a;
 
             //return atividadesComNome.ToList();
 
             // LAMBDA
-            return contexto.Atividades.Where(a => a.Nome == nome).ToList();
+            return contexto.Atividades
+                .Where(a => a.Nome.ToLower() == nome.ToLower()).ToList();
         }
 
         public IList<Atividade> ListarTodos()
