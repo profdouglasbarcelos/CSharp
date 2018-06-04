@@ -1,6 +1,6 @@
 ﻿namespace Modelos
 {
-    class Atividade
+    public class Atividade
     {
         public int AtividadeID { get; set; }
 
