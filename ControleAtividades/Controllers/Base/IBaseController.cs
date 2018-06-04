@@ -8,7 +8,7 @@ namespace Controllers.Base
         void Adicionar(T entity);
         IList<T> ListarTodos();
 
-        IList<T> ListarPorNome();
+        IList<T> ListarPorNome(string nome);
 
         T BuscarPorID(int id);
 
