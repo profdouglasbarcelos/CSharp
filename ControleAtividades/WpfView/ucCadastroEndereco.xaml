@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="WpfView.ucCadastroEndereco"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfView"
+             mc:Ignorable="d" 
+             d:DesignHeight="217.669" d:DesignWidth="300">
+    <Grid Margin="0,0,0,10">
+        <StackPanel HorizontalAlignment="Left" Height="96" Margin="10,10,0,0" VerticalAlignment="Top" Width="280">
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Rua"/>
+            <TextBox x:Name="txtRua" Height="23" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="Número"/>
+            <TextBox x:Name="txtNumero" Height="23" TextWrapping="Wrap" Text="TextBox"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

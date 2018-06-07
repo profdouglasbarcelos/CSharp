@@ -13,6 +13,7 @@ namespace Controllers
 
         public void Adicionar(Usuario entity)
         {
+            entity.Ativo = true;
             contexto.Usuarios.Add(entity);
             contexto.SaveChanges();
         }
