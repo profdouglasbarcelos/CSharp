@@ -15,6 +15,5 @@ namespace Controllers.DAL
         public DbSet<Categoria> Categorias { get; set; }
 
         public DbSet<Atividade> Atividades { get; set; }
-
     }
 }
