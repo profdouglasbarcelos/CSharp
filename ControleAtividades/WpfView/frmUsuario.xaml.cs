@@ -23,5 +23,14 @@ namespace WpfView
         {
             InitializeComponent();
         }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSalvar_Click(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }
