@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,6 +33,29 @@ namespace WpfView
 
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                UsuariosController usuariosController = new UsuariosController();
+
+                if (string.IsNullOrEmpty(txtNome.Text))
+                    throw new NullReferenceException("O campo nome é obrigatório.");
+
+                Usuario usuario = new Usuario();
+
+                usuario.Nome = txtNome.Text;
+
+                usuariosController.Adicionar(usuario);
+
+                MessageBox.Show("Usuário Salvo com sucesso!");
+            }
+            catch(NullReferenceException nre)
+            {
+                // excecao mais especifica
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao salvar (" + ex.Message + ")");
+            }
         }
     }
 }
