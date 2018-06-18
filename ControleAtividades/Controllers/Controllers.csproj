@@ -53,6 +53,10 @@
     <Compile Include="Migrations\201806082327161_InitialCreate.Designer.cs">
       <DependentUpon>201806082327161_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806182258236_AdicionandoCampoCpfUsuario.cs" />
+    <Compile Include="Migrations\201806182258236_AdicionandoCampoCpfUsuario.Designer.cs">
+      <DependentUpon>201806182258236_AdicionandoCampoCpfUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="UsuariosController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +74,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201806082327161_InitialCreate.resx">
       <DependentUpon>201806082327161_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806182258236_AdicionandoCampoCpfUsuario.resx">
+      <DependentUpon>201806182258236_AdicionandoCampoCpfUsuario.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
