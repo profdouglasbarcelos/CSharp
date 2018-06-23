@@ -1,5 +1,4 @@
-﻿
-
+﻿using Modelos;
 using System;
 
 namespace ConsoleView
