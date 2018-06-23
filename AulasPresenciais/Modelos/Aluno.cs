@@ -1,4 +1,4 @@
-﻿namespace ConsoleView
+﻿namespace Modelos
 {
     public class Aluno
     {
@@ -9,9 +9,6 @@
             get { return nome; }
             set { nome = value; }
         }
-
-
-
 
         public int Matricula { get; set; }
 
