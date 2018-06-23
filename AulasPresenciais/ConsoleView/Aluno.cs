@@ -2,7 +2,16 @@
 {
     public class Aluno
     {
-        public string Nome { get; set; }
+        private string nome;
+
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+        }
+
+
+
 
         public int Matricula { get; set; }
 

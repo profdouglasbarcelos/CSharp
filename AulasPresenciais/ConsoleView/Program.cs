@@ -8,13 +8,29 @@ namespace ConsoleView
     {
         static void Main(string[] args)
         {
-            Aluno a = new Aluno();
-            a.Nome = "Godofredo"; //set
-            a.Matricula = 123; // set
-
-            Console.WriteLine("Aluno: " + a.Nome); // get
+            Aluno a = CadastrarAluno();
+            ImprimirDadosAluno(a);
 
             Console.ReadKey();
+        }
+
+        private static void ImprimirDadosAluno(Aluno a)
+        {
+            Console.WriteLine("Aluno: " + a.Nome); // get
+            Console.WriteLine("Matricula: " + a.Matricula); //get
+        }
+
+        private static Aluno CadastrarAluno()
+        {
+            Aluno a = new Aluno();
+
+            Console.Write("Digite o nome do aluno: ");
+            a.Nome = Console.ReadLine(); //set
+
+            Console.Write("Digite o numero da matricula: ");
+            a.Matricula = int.Parse(Console.ReadLine()); //set
+
+            return a;
         }
     }
 }
