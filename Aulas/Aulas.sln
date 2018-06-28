@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula1405_Interfaces", "Aula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula1705_Camadas", "Aula1705_Camadas\Aula1705_Camadas.csproj", "{0A33E8C1-C75D-44C1-9D9D-DDF6740CF8C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula2806_CrudMVVM", "Aula2806_CrudMVVM\Aula2806_CrudMVVM.csproj", "{ECF37F63-FFED-4A2C-BEF1-2509613DEF0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0A33E8C1-C75D-44C1-9D9D-DDF6740CF8C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A33E8C1-C75D-44C1-9D9D-DDF6740CF8C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A33E8C1-C75D-44C1-9D9D-DDF6740CF8C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF37F63-FFED-4A2C-BEF1-2509613DEF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF37F63-FFED-4A2C-BEF1-2509613DEF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF37F63-FFED-4A2C-BEF1-2509613DEF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF37F63-FFED-4A2C-BEF1-2509613DEF0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
