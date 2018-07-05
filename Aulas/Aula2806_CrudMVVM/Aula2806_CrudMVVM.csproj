@@ -62,6 +62,7 @@
       <DependentUpon>CadastroFuncionario.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DeletarCommand.cs" />
+    <Compile Include="Views\EditarCommand.cs" />
     <Compile Include="Views\NovoCommand.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

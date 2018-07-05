@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aula2806_CrudMVVM.Views"
         mc:Ignorable="d"
-        Title="CadastroFuncionario" Height="300" Width="300">
+        Title="CadastroFuncionario" Height="324" Width="300">
     <Grid Margin="3">
         <StackPanel Orientation="Vertical">
             <TextBlock Text="Id"/>
@@ -15,13 +15,13 @@
             <TextBlock Text="Sobrenome"/>
             <TextBox Text="{Binding Sobrenome}"/>
             <TextBlock Text="Data de Nascimento"/>
-            <DatePicker SelectedDate="{Binding DataNascimento}"/>
+            <DatePicker Name="DataNascimentoDatePicker" SelectedDate="{Binding DataNascimento}"/>
             <TextBlock Text="Sexo"/>
             <ComboBox Name="SexoComboBox" Text="{Binding Sexo}"/>
             <TextBlock Text="Estado Civil"/>
             <ComboBox Name="EstadoCivilComboBox" Text="{Binding EstadoCivil}"/>
             <TextBlock Text="Data de Admissão"/>
-            <DatePicker SelectedDate="{Binding DataAdmissao}"/>
+            <DatePicker Name="DataAdmissaoDatePicker" SelectedDate="{Binding DataAdmissao}"/>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5*"/>

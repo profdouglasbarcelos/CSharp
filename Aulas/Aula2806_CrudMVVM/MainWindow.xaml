@@ -17,7 +17,9 @@
                     CommandParameter="{Binding}"
                     Command="{Binding Novo}"/>
             
-            <Button Margin="3" Padding="3" Content="Editar"/>
+            <Button Margin="3" Padding="3" Content="Editar"
+                    CommandParameter="{Binding}"
+                    Command="{Binding Editar}"/>
             
             <Button Margin="3" Padding="3" Content="Deletar"
                     CommandParameter="{Binding}"

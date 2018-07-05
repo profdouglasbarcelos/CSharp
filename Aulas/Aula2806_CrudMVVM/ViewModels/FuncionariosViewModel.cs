@@ -12,6 +12,8 @@ namespace Aula2806_CrudMVVM.ViewModels
         //Commands
         public DeletarCommand Deletar { get; private set; } = new DeletarCommand();
         public NovoCommand Novo { get; private set; } = new NovoCommand();
+        public EditarCommand Editar { get; private set; } = new EditarCommand();
+
 
         public System.Collections.ObjectModel.ObservableCollection<Models.Funcionario> Funcionarios { get; private set; }
 
@@ -23,6 +25,7 @@ namespace Aula2806_CrudMVVM.ViewModels
             {
                 SetField(ref _funcionarioSelecionado, value);
                 Deletar.RaiseCanExecuteChanged();
+                Editar.RaiseCanExecuteChanged();
             }
         }
 

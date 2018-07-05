@@ -25,6 +25,8 @@ namespace Aula2806_CrudMVVM.Views
 
             SexoComboBox.ItemsSource = Enum.GetValues(typeof(Models.Sexo)).Cast<Models.Sexo>();
             EstadoCivilComboBox.ItemsSource = Enum.GetValues(typeof(Models.EstadoCivil)).Cast<Models.EstadoCivil>();
+            DataNascimentoDatePicker.SelectedDate = DateTime.Today;
+            DataAdmissaoDatePicker.SelectedDate = DateTime.Today;
         }
 
         private void OKButton_Click(object sender, RoutedEventArgs e)
