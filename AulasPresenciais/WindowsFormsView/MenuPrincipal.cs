@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsView.TelasAluno;
 
 namespace WindowsFormsView
 {
@@ -19,7 +20,8 @@ namespace WindowsFormsView
 
         private void btnCadastrarAluno_Click(object sender, EventArgs e)
         {
-
+            frmCadastroAluno cadAluno = new frmCadastroAluno();
+            cadAluno.Show();
         }
 
         private void btnListarAluno_Click(object sender, EventArgs e)
