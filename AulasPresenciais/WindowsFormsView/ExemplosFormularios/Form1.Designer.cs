@@ -66,10 +66,12 @@
             this.btnSalvar.TabIndex = 0;
             this.btnSalvar.Text = "button1";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.SystemColors.Info;
+            this.btnCancelar.Enabled = false;
             this.btnCancelar.Location = new System.Drawing.Point(93, 73);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);

@@ -15,8 +15,13 @@ namespace WindowsFormsView
         private void btnCancelar_Click(object sender, System.EventArgs e)
         {
             Form2 f2 = new Form2();
-            f2.Show();
-            //this.Hide();
+            f2.ShowDialog();
+            this.Hide();
+        }
+
+        private void btnSalvar_Click(object sender, System.EventArgs e)
+        {
+            btnCancelar.Enabled = true;
         }
     }
 }
