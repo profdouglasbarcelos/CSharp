@@ -1,7 +1,12 @@
-﻿namespace Modelos
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Modelos
 {
     public class Aluno
     {
+        [Key]
+        public int AlunoID { get; set; }
+
         private string nome;
 
         public string Nome
@@ -10,7 +15,7 @@
             set { nome = value; }
         }
 
+        [Required]
         public int Matricula { get; set; }
-
     }
 }
