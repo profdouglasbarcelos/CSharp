@@ -10,6 +10,10 @@ namespace POO_Console
     {
         static void Main(string[] args)
         {
+            Carro novoCarro = new Carro();
+
+            novoCarro.Acelerar();
+            novoCarro.Acelerar();
         }
     }
 }
