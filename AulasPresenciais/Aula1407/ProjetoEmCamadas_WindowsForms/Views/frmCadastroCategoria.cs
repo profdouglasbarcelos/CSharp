@@ -14,11 +14,22 @@ namespace ProjetoEmCamadas_WindowsForms.Views
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Categoria categ = new Categoria();
-            categ.Nome = txtNome.Text;
+            try
+            {
+                Categoria categ = new Categoria();
+                categ.Nome = txtNome.Text;
 
-            CategoriasController catController = new CategoriasController();
-            catController.Adicionar(categ);
+                CategoriasController catController = new CategoriasController();
+                catController.Adicionar(categ);
+
+                MessageBox.Show("Categoria salva com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao salvar (" + ex.Message + ")");
+            }
+
+
         }
     }
 }
