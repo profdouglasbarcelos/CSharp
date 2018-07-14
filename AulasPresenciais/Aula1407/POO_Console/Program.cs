@@ -14,6 +14,10 @@ namespace POO_Console
 
             novoCarro.Acelerar();
             novoCarro.Acelerar();
+
+            Carro carro2 = new Carro(5);
+            carro2.Acelerar();
+            carro2.Frenar();
         }
     }
 }

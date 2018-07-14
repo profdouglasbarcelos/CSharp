@@ -18,6 +18,18 @@ namespace POO_Console
             }
         }
 
+        // Construtor
+        public Carro(int veloc)
+        {
+            _velocidade = veloc;
+        }
+
+        public Carro()
+        {
+            _velocidade = 0;
+        }
+
+
 
         public void Acelerar()
         {
