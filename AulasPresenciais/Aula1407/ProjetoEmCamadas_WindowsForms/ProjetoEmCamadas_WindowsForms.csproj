@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CategoriasController.cs" />
     <Compile Include="DAL\Categoria.cs">
       <DependentUpon>LojaDB.tt</DependentUpon>
     </Compile>
@@ -117,7 +118,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="Views\" />
   </ItemGroup>
