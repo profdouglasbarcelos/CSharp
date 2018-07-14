@@ -93,6 +93,12 @@
     <Compile Include="Views\frmCadastroCategoria.Designer.cs">
       <DependentUpon>frmCadastroCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmListagemCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmListagemCategorias.Designer.cs">
+      <DependentUpon>frmListagemCategorias.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +113,9 @@
     </Compile>
     <EmbeddedResource Include="Views\frmCadastroCategoria.resx">
       <DependentUpon>frmCadastroCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmListagemCategorias.resx">
+      <DependentUpon>frmListagemCategorias.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="DAL\LojaDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

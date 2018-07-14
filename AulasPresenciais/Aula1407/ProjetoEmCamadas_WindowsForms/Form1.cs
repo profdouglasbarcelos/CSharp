@@ -24,5 +24,11 @@ namespace ProjetoEmCamadas_WindowsForms
             frmCadastroCategoria frmCategoria = new frmCadastroCategoria();
             frmCategoria.ShowDialog();
         }
+
+        private void btnListarCategorias_Click(object sender, EventArgs e)
+        {
+            frmListagemCategorias frmListaCategorias = new frmListagemCategorias();
+            frmListaCategorias.ShowDialog();
+        }
     }
 }

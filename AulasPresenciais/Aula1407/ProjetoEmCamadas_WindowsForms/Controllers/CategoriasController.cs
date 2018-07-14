@@ -1,4 +1,6 @@
 ﻿using ProjetoEmCamadas_WindowsForms.DAL;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ProjetoEmCamadas_WindowsForms.Controllers
 {
@@ -10,6 +12,11 @@ namespace ProjetoEmCamadas_WindowsForms.Controllers
         {
             contexto.Categorias.Add(categoria);
             contexto.SaveChanges();
+        }
+
+        public List<Categoria> Listar()
+        {
+            return contexto.Categorias.ToList();
         }
     }
 }

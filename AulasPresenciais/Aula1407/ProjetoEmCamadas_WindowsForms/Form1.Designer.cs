@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnCadastroCategoria = new System.Windows.Forms.Button();
+            this.btnListarCategorias = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCadastroCategoria
@@ -41,11 +42,22 @@
             this.btnCadastroCategoria.UseVisualStyleBackColor = true;
             this.btnCadastroCategoria.Click += new System.EventHandler(this.btnCadastroCategoria_Click);
             // 
+            // btnListarCategorias
+            // 
+            this.btnListarCategorias.Location = new System.Drawing.Point(13, 42);
+            this.btnListarCategorias.Name = "btnListarCategorias";
+            this.btnListarCategorias.Size = new System.Drawing.Size(127, 23);
+            this.btnListarCategorias.TabIndex = 1;
+            this.btnListarCategorias.Text = "Listar Categorias";
+            this.btnListarCategorias.UseVisualStyleBackColor = true;
+            this.btnListarCategorias.Click += new System.EventHandler(this.btnListarCategorias_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnListarCategorias);
             this.Controls.Add(this.btnCadastroCategoria);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -56,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnCadastroCategoria;
+        private System.Windows.Forms.Button btnListarCategorias;
     }
 }
 
