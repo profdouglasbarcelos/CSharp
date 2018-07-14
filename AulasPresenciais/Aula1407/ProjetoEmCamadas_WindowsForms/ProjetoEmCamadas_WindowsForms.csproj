@@ -57,10 +57,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\Categoria.cs">
+      <DependentUpon>LojaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\LojaDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LojaDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\LojaDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LojaDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="DAL\LojaDB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LojaDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Produto.cs">
+      <DependentUpon>LojaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -104,6 +120,22 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\LojaDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LojaDB.Context.cs</LastGenOutput>
+      <DependentUpon>LojaDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="DAL\LojaDB.edmx.sql" />
+    <Content Include="DAL\LojaDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LojaDB.cs</LastGenOutput>
+      <DependentUpon>LojaDB.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
