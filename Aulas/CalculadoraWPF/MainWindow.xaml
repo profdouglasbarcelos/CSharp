@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculadoraWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="450" Width="492.106">
+    <Grid Margin="0,0,2,0">
+        <Label x:Name="lblDisplay" Content="" Margin="10,10,10,0" VerticalAlignment="Top" Height="95" FontFamily="OCR A Std" FontSize="72" FontWeight="Bold" BorderBrush="Black" BorderThickness="2"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="104,159,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
+
     </Grid>
 </Window>
