@@ -1,0 +1,22 @@
+﻿<Window x:Class="Aula0708_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aula0708_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnOla" Content="Olá mundo! Em WPF" HorizontalAlignment="Center" Margin="350,188,292,0" VerticalAlignment="Top" Width="150"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDisplay" HorizontalAlignment="Center" Height="75" Margin="98,30,153,0" TextWrapping="Wrap" Text="1234567890" VerticalAlignment="Top" Width="541" TextChanged="txtDisplay_TextChanged" FontSize="72" FontWeight="Bold" FontFamily="OCR A Std"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="115,118,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <ListBox HorizontalAlignment="Left" Height="100" Margin="10,152,0,0" VerticalAlignment="Top" Width="100"/>
+        <ComboBox HorizontalAlignment="Left" Margin="115,152,0,0" VerticalAlignment="Top" Width="138"/>
+        <DatePicker HorizontalAlignment="Left" Margin="115,179,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Width="100px" HorizontalAlignment="Left" Margin="601,179,0,0" VerticalAlignment="Top"/>
+        <Slider Width="100px" HorizontalAlignment="Left" Margin="350,131,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
