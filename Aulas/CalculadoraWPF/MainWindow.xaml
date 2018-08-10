@@ -8,22 +8,23 @@
         Title="MainWindow" Height="450" Width="492.106">
     <Grid Margin="0,0,2,0">
         <Label x:Name="lblDisplay" Content="" Margin="10,10,10,0" VerticalAlignment="Top" Height="95" FontFamily="OCR A Std" FontSize="72" FontWeight="Bold" BorderBrush="Black" BorderThickness="2"/>
-        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Margin="136,330,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="56,273,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Margin="136,273,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="216,273,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="56,216,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="136,216,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="216,216,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="56,159,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="136,159,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="216,159,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btnMais" Content="+" HorizontalAlignment="Left" Margin="296,159,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btnMenos" Content="-" HorizontalAlignment="Left" Margin="296,216,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btnVezes" Content="*" HorizontalAlignment="Left" Margin="296,273,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btnPot" Content="x^y" HorizontalAlignment="Left" Margin="376,159,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btnRaiz" Content="&#8730;" HorizontalAlignment="Left" Margin="376,216,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btnMemoria" Content="M" HorizontalAlignment="Left" Margin="376,273,0,0" VerticalAlignment="Top" Width="75" FontSize="36"/>
-        <Button x:Name="btnIgual" Content="=" HorizontalAlignment="Left" Margin="216,330,0,0" VerticalAlignment="Top" Width="235" FontSize="36"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Margin="136,330,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btn0_Click"/>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="56,273,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Margin="136,273,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btn2_Click"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="216,273,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btn3_Click"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="56,216,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btn4_Click"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="136,216,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btn5_Click"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="216,216,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btn6_Click"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="56,159,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btn7_Click"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="136,159,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btn8_Click"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="216,159,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btn9_Click"/>
+        <Button x:Name="btnMais" Content="+" HorizontalAlignment="Left" Margin="296,159,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btnMais_Click"/>
+        <Button x:Name="btnMenos" Content="-" HorizontalAlignment="Left" Margin="296,216,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btnMenos_Click"/>
+        <Button x:Name="btnVezes" Content="*" HorizontalAlignment="Left" Margin="296,273,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btnVezes_Click"/>
+        <Button x:Name="btnPot" Content="x^y" HorizontalAlignment="Left" Margin="376,159,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btnPot_Click"/>
+        <Button x:Name="btnRaiz" Content="&#8730;" HorizontalAlignment="Left" Margin="376,216,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btnRaiz_Click"/>
+        <Button x:Name="btnMemoria" Content="M" HorizontalAlignment="Left" Margin="376,273,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btnMemoria_Click"/>
+        <Button x:Name="btnIgual" Content="=" HorizontalAlignment="Left" Margin="216,330,0,0" VerticalAlignment="Top" Width="235" FontSize="36" Click="btnIgual_Click"/>
+        <Button x:Name="btnVezes_Copy" Content="/" HorizontalAlignment="Left" Margin="56,330,0,0" VerticalAlignment="Top" Width="75" FontSize="36" Click="btnDiv_Click"/>
     </Grid>
 </Window>
