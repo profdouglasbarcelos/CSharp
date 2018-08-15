@@ -40,10 +40,19 @@
           <Property Name="Numero" Type="Int32" Nullable="false" />
           <Property Name="CEP" Type="String" Nullable="false" />
           <NavigationProperty Name="Cliente" Relationship="MeuDB.ClienteEndereco" FromRole="Endereco" ToRole="Cliente" />
+          <Property Name="ClienteId" Type="Int32" Nullable="false" />
         </EntityType>
         <Association Name="ClienteEndereco">
           <End Type="MeuDB.Cliente" Role="Cliente" Multiplicity="1" />
           <End Type="MeuDB.Endereco" Role="Endereco" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Endereco">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
         </Association>
       </Schema>
     </edmx:ConceptualModels>
