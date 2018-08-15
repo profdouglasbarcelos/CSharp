@@ -50,6 +50,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Cliente.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Endereco.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MeuDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MeuDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MeuDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="MeuDB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -67,6 +83,22 @@
       <DependentUpon>MeuDB.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MeuDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MeuDB.Context.cs</LastGenOutput>
+      <DependentUpon>MeuDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="MeuDB.edmx.sql" />
+    <Content Include="MeuDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MeuDB.cs</LastGenOutput>
+      <DependentUpon>MeuDB.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
