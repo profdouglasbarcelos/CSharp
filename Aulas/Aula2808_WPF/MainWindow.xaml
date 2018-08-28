@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aula2808_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1441.111" Width="1273.778">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="5*"/>
-            <RowDefinition Height="1*"/>
+            <!--<RowDefinition Height="1*"/>-->
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="8*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Width="600px" Height="250px">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Width="600px" Height="350px">
             <Button Content="Button" Margin="50,10,50,30"/>
             <CheckBox Content="CheckBox"/>
             <ComboBox Width="120">
@@ -29,6 +29,17 @@
                 <ListBoxItem Content="Bla bla bla 2"/>
                 <ListBoxItem Content="Né né né"/>
             </ListBox>
+            <DataGrid Height="100"/>
+            <TabControl Height="100">
+                <TabItem Header="Aba 1">
+                    <Grid Background="#FFE5E5E5">
+                        <RadioButton />
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Aba 2">
+                    <Grid Background="#FFE5E5E5"/>
+                </TabItem>
+            </TabControl>
 
         </StackPanel>
 
