@@ -16,6 +16,17 @@
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="8*"/>
         </Grid.ColumnDefinitions>
-        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Width="600px" Height="250px">
+            <Button Content="Button" Margin="50,10,50,30"/>
+            <CheckBox Content="CheckBox"/>
+            <ComboBox Width="120">
+                <Button Content="Selecione"/>
+                <ComboBoxItem Content="Bla bla bla"/>
+                <Separator/>
+                <CheckBox Content="Marque esta opção"/>
+            </ComboBox>
+
+        </StackPanel>
+
     </Grid>
 </Window>
