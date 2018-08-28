@@ -25,6 +25,10 @@
                 <Separator/>
                 <CheckBox Content="Marque esta opção"/>
             </ComboBox>
+            <ListBox Height="100">
+                <ListBoxItem Content="Bla bla bla 2"/>
+                <ListBoxItem Content="Né né né"/>
+            </ListBox>
 
         </StackPanel>
 
