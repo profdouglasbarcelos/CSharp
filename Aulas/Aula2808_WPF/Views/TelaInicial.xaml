@@ -8,8 +8,8 @@
         Title="TelaInicial" Height="450" Width="800">
     <Grid>
         <StackPanel HorizontalAlignment="Left" Height="301" Margin="53,51,0,0" VerticalAlignment="Top" Width="383">
-            <Button x:Name="btnCarregarTelaA" Content="Tela A" Margin="0,50"/>
-            <Button x:Name="btnTelaB" Content="Carregar Tela B"/>
+            <Button x:Name="btnCarregarTelaA" Content="Tela A" Margin="0,50" Click="btnCarregarTelaA_Click"/>
+            <Button x:Name="btnTelaB" Content="Carregar Tela B" Click="btnTelaB_Click"/>
         </StackPanel>
 
     </Grid>

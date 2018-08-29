@@ -15,25 +15,13 @@ using System.Windows.Shapes;
 namespace Aula2808_WPF.Views
 {
     /// <summary>
-    /// Lógica interna para TelaInicial.xaml
+    /// Lógica interna para TelaB.xaml
     /// </summary>
-    public partial class TelaInicial : Window
+    public partial class TelaB : Window
     {
-        public TelaInicial()
+        public TelaB()
         {
             InitializeComponent();
-        }
-
-        private void btnCarregarTelaA_Click(object sender, RoutedEventArgs e)
-        {
-            TelaA minhaTelaTelaA = new TelaA();
-            minhaTelaTelaA.Show();
-        }
-
-        private void btnTelaB_Click(object sender, RoutedEventArgs e)
-        {
-            TelaB minhaTelaB = new TelaB();
-            minhaTelaB.ShowDialog();
         }
     }
 }
