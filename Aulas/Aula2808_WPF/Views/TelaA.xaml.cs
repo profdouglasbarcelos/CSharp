@@ -21,6 +21,7 @@ namespace Aula2808_WPF.Views
     {
         public TelaA()
         {
+            // comentario
             InitializeComponent();
         }
     }
