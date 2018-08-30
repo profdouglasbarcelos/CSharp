@@ -23,6 +23,7 @@ namespace Aula2808_WPF.Views
         {
             // comentario
             InitializeComponent();
+            //comentario
         }
     }
 }
