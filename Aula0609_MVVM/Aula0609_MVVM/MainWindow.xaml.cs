@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Aula0609_MVVM.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace Aula0609_MVVM
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnCadastrarAtividade_Click(object sender, RoutedEventArgs e)
+        {
+            CadastroAtividade cad = new CadastroAtividade();
+            cad.Show();
         }
     }
 }

@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="btnCadastrarAtividade" Content="Cadastrar Atividade" HorizontalAlignment="Left" Margin="66,44,0,0" VerticalAlignment="Top" Width="177" Height="44" Click="btnCadastrarAtividade_Click"/>
+
     </Grid>
 </Window>
