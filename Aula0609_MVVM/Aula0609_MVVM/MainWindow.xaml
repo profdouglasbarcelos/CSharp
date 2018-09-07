@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="btnCadastrarAtividade" Content="Cadastrar Atividade" HorizontalAlignment="Left" Margin="66,44,0,0" VerticalAlignment="Top" Width="177" Height="44" Click="btnCadastrarAtividade_Click"/>
+        <Button x:Name="btnListarAtividades" Content="Listar Atividades" HorizontalAlignment="Left" Margin="270,44,0,0" VerticalAlignment="Top" Width="206" Height="44" Click="btnListarAtividades_Click"/>
 
     </Grid>
 </Window>

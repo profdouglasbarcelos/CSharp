@@ -31,5 +31,11 @@ namespace Aula0609_MVVM
             CadastroAtividade cad = new CadastroAtividade();
             cad.Show();
         }
+
+        private void btnListarAtividades_Click(object sender, RoutedEventArgs e)
+        {
+            ListaAtividades la = new ListaAtividades();
+            la.Show();
+        }
     }
 }

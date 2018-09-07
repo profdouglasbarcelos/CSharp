@@ -25,9 +25,9 @@ namespace Aula0609_MVVM.Views
             InitializeComponent();
 
             CadastroAtividadeViewModel vm = new CadastroAtividadeViewModel();
-            vm.Titulo = "Primeira Atividade";
-            vm.Descricao = "Criando projeto no formato MVVM";
-            vm.Ativo = true;
+            //vm.Titulo = "Primeira Atividade";
+            //vm.Descricao = "Criando projeto no formato MVVM";
+            //vm.Ativo = true;
 
             DataContext = vm;
         }

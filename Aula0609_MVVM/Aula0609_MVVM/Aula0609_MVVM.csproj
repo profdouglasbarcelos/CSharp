@@ -55,8 +55,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ViewModels\CadastroAtividadeViewModel.cs" />
+    <Compile Include="ViewModels\ListaAtividadesViewModel.cs" />
     <Compile Include="Views\CadastroAtividade.xaml.cs">
       <DependentUpon>CadastroAtividade.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListaAtividades.xaml.cs">
+      <DependentUpon>ListaAtividades.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -71,6 +75,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\CadastroAtividade.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ListaAtividades.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
